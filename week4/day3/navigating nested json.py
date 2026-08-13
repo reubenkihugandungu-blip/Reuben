@@ -13,7 +13,8 @@ api_json = '''
 {"day": "Tuesday", "steps": 10500, "protocol": "2MAD"},
 {"day": "Wednesday", "steps": 8800, "protocol": "OMAD"},
 {"day": "Thursday", "steps": 11000, "protocol": "Autophagy Marathon"},
-{"day": "Friday", "steps": 7600, "protocol": "OMAD"}
+{"day": "Friday", "steps": 7600, "protocol": "OMAD"},
+{"day": "Saturday", "steps": 7900, "protocol": "2MAD"}
 ]
 }
 '''

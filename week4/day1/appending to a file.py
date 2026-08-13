@@ -3,3 +3,4 @@
 with open("daily_log.txt", "a") as f:
     f.write("Pages read: 30\n")
     f.write("Workout: bench press\n")
+    f.write("Hobby: playing the guitar\n")

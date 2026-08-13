@@ -14,4 +14,4 @@ print("Total days tracked:", len(weekly_summary["steps"]))
 print("First day steps:", weekly_summary["steps"][0])
 print("Average steps:", sum(weekly_summary["steps"]) / len(weekly_summary["steps"]))
 # sum() adds up all numbers in a list. 
-# Combine it with len() to calculate averages without writing a loop.#
+# Combine it with len() to calculate averages without writing a loop.

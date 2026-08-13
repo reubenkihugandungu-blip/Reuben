@@ -1,4 +1,4 @@
-# Applied Example: 
+ # Applied Example: 
 # Chicken Farm Egg Collection Log
 # A chicken farmer records daily egg collection and feed cost per pen.
 #  The same file read and write skills apply directly to managing farm records.
@@ -8,7 +8,7 @@ import io
 farm_log = """Pen A,240,12
 Pen B,185,10
 Pen C,310,15
-Pen D,92c,8
+Pen D,92,8
 Pen E,275,13
 """
 total_eggs = 0

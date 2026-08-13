@@ -1,5 +1,5 @@
 # not writing to a real disk file. Using io.stringIO() to create an in memory text buffer that behave like a file.
-# This is useful when you want to practice file operations ot test code without creating an actual file on your computer.
+# This is useful when you want to practice file operations or test code without creating an actual file on your computer.
 
 import io
 

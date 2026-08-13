@@ -10,7 +10,6 @@ sleep hours: 7.5
 """ # A multiline string assigned to file data that simulates fake file contents.
 f = io.StringIO(file_data) # creates an in memory text stream StringIO from file_data, behaving like a file object
 lines = f.readlines()# reads  all lines from the StringIO stream into a list lines; each element ends with a newline \n except possibly the last
-
 print(f"Number of lines: {len(lines)}") # prints the number of lines, uses an f string
 print()
 for line in lines: # starts a loop to process each line from the lines list.

@@ -4,3 +4,4 @@ Protocol: OMAD
 Cold shower: Yes
 Pages read: 30
 Workout: bench press
+Hobby: playing the guitar

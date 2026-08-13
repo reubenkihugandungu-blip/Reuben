@@ -12,7 +12,7 @@ def check_steps(steps):
     else:
         print(steps, "steps - Below goal")
         
-# call with different values.
-check_steps(9200)
+# call with different values/arguments
+check_steps(9200) # 9200 is an argument
 check_steps(7500)
 check_steps(11000)

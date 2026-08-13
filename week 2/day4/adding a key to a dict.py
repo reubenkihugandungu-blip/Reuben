@@ -17,3 +17,4 @@ print("After adding cold shower", week_log)
 for log in week_log:
     status = "Done" if log["cold_shower"] == True else "Cold shower skipped"
     print(log["day"], log["cold_shower"], status)
+#  

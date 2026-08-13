@@ -1,12 +1,13 @@
+
+# 
 """
-RIMA SACCO - SCHOOL LOAN CALCULATOR
+RIMA SACCO - BIASHARA LOAN CALCULATOR
 ------------------------------------
-Product: School Loan
-Interest basis: 18% per annum, REDUCING BALANCE
+Product: Biashara Loan (proposed)
+Interest basis: 20% per annum, REDUCING BALANCE
 Repayment: Equal monthly instalments (amortizing / annuity method)
 
-This follows the same layout as the "SCHOOL LOAN MOVEMENT SCHEDULE"
-tab in MOVEMENT_SCHEDULE.xlsx:
+Built on the same "movement schedule" model used for the School Loan:
     MONTH | INSTALMENT | INTEREST | PRINCIPAL | BALANCE
 
 On a reducing balance loan, interest each month is charged only on the
@@ -21,7 +22,7 @@ from dataclasses import dataclass
 @dataclass
 class LoanTerms:
     principal: float          # Amount disbursed to the member
-    annual_rate: float        # Annual interest rate, e.g. 0.18 for 18%
+    annual_rate: float        # Annual interest rate, e.g. 0.20 for 20%
     term_months: int          # Repayment period in months
 
 
@@ -117,8 +118,8 @@ def summarize(loan: LoanTerms, schedule):
 
 
 if __name__ == "__main__":
-    # Member's loan application: 40,000, 12 months, 18% p.a. reducing balance
-    member_loan = LoanTerms(principal=100000, annual_rate=0.18, term_months=12)
+    # Member's Biashara loan application: 40,000, 6 months, 20% p.a. reducing balance
+    member_loan = LoanTerms(principal=40000, annual_rate=0.20, term_months=6)
 
     schedule = build_movement_schedule(member_loan)
     print_schedule(schedule)
