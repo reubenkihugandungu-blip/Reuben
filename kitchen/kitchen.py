@@ -1,7 +1,6 @@
-# 
-import io
-file_content = io.StringIO()
-file_content.write("Steps: 9200\n")
-file_content.write("Water: 8 glasses\n")
-print("File written. Contents:")
-print(file_content.getvalue())
+meals_log = ['Rice', 'Ugali', 'Chapati', 'Pilau', '6', 'Githeri']
+for m in meals_log:
+    try:
+        meals = str(m)
+    except TypeError:
+        print(f"Invalid Data")

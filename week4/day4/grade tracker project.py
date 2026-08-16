@@ -69,3 +69,4 @@ scores_c = [60, None, None]
 for s in [scores_a, scores_b, scores_c]:
   avg = calculate_average(s)
   print(f"Scores: {s} | Avg: {avg} | Grade: {letter_grade(avg)}")
+# 

@@ -11,6 +11,7 @@ for item in steps_data: # starts a loop that goes through each value in the list
         else:
             print(steps, "- Below goal")
     except ValueError:# this block runs only if converting item to int failed with a value error
-        print(f"'{item}'' is not a valid number. Skipping.")# prints a message saying the current item is invalid and wil be skipped.
+        print(f"'{item}' is not a valid number. Skipping.")# prints a message saying the current item is invalid and wil be skipped.
 
 
+# 

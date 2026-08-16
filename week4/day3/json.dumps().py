@@ -11,7 +11,7 @@ daily_log = { # creates a python dict with keys like steps & water glasses, valu
     "fasting_protocol": "OMAD",
     "sleep_hours": 7.5
 }
-# convert to JSON string - converts the p dict into json-formatted string
+# convert to JSON string - converts the python dict into json-formatted string
 json_text = json.dumps(daily_log) # JSON is a text format so the result is stored in json_text
 print("Type:", type(json_text))# shows that json_text is a str not  a dict
 print("JSON:", json_text) # prints the JSON string produced from the dict

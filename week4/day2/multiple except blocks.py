@@ -21,3 +21,4 @@ def calculate_average(steps_list): # defines a function named calculate_average,
 print("Average:", calculate_average([9200, 10500, 8800, 11000]))# calls the function with valid numeric data & prints the average of the list
 print("Average:", calculate_average([]))# zerodivisonerror
 print("Average:", calculate_average([9200, "eight thousand", 10500]))#typeError
+#
