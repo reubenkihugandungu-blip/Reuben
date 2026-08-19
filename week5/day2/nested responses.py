@@ -4,7 +4,7 @@
 
 # Navigate nested structure
 response = {
-    "status": "sucess",
+    "status": "success",
     "user": {
         "id": 42,
         "name": "Kevin Mwangi",
@@ -33,7 +33,7 @@ name = response["user"]["name"]
 city = response["user"]["location"]["city"]
 steps = response["today"]["steps"]
 protocol = response["today"]["fasting"]["protocol"]
-bench = response["today"]["workout"]["bench_press_kg"]
+bench = response["today"]["workout"]["bench_press_kg"]# response[today] gets the today dict,[workout] gets the workout dict inside today, [bench_press_kg] gets the value 90 from the bench_press_kg key
 
 print(f"Name:  {name}")
 print(f"City: {city}")
