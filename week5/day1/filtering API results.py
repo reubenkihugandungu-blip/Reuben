@@ -12,7 +12,9 @@ logs = [
 
 # OMAD users who hit 10,000 steps
 goal_hitters = [
-    r for r in logs
+    r for r in logs # for r in logs checks each dict in logs, r[protocol]=='OMAD' keeps only OMAD users
+    # r['steps'] >= 8000 keeps only users with atleast 8000 steps
+    # r adds the matching dict to goal_hitters
     if r ["protocol"] == "OMAD" and r["steps"] >= 8000
 ]
 

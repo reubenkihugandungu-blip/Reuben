@@ -15,13 +15,13 @@ raw = [
 # starts of a list comprehension that creates a new clean list. # line 15 to 19 dict definition inside the comprehension
 # for each record, create a new dict with only 3 fields: name,steps, and protocol.
 # The variable r represents each raw record.
-clean = [   
+clean = [   # 👉 start a list comprehension
     { 
         "name": r["name"],
         "steps": r["steps"],
         "protocol": r["protocol"]
-    }
-    for r in raw if r["active"] # loop through each record in the raw list(calling it r), but only include records where r[active] is true filters inactive users
+    } #👉 loop through each record in the raw list(calling it r), but only include records where r[active] is true filters inactive users
+    for r in raw if r["active"]
 ]
 
 for record in clean: # loop through each record in the newly created clean list

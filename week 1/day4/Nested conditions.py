@@ -13,3 +13,4 @@ if workout_done:
         print("Solid session. No new record today.")
 else:
     print("Rest day. No workout logged.")
+# 

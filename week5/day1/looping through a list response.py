@@ -12,6 +12,6 @@ weekly_logs = [
 
 for log in weekly_logs:
     status = "Goal met" if log["steps"] >= 10000 else "short"
-    print(f"{log['day']:12} {log['steps']:6} steps {status}")
+    print(f"{log['day']:10} {log['steps']:10} steps {status}")
 
-# {log['day']: 12} prints the day name, padded to 12 characters wide (right-aligned)
+# {log['day']: 10} prints the day name, padded to 10 characters wide (right-aligned)

@@ -16,7 +16,7 @@ data = {
 }
 
 print("Name:", data["name"])
-print("Steps:", data["steps"])
+print("Steps:", data['steps'])
 print("Protocol:", data["fasting_protocol"])
 print("Cold shower:", data["cold_shower"])
 print("Sleep:", data["sleep_hours"], "hours")

@@ -14,13 +14,13 @@ api_response = {
 
 print(f"Week: {api_response['week']}")
 print("-" * 62)
-print(f"{'name':<20} {'Avg Steps':>10} {'Days 10k+':>15} {'Max Steps':>15}")
+print(f"{'Name':<20} {'Avg Steps':>10} {'Days 10k+':>15} {'Max Steps':>15}")
 print("-" * 62)
 
 for member in api_response["members"]:
-    steps = member["daily_steps"]
+    steps = member["daily_steps"]# stores the member daily steps in steps
     avg = round(sum(steps) / len(steps))
-    days_hit = sum(1 for s in steps if s >= 10000)
+    days_hit = sum(1 for s in steps if s >= 10000)# the expression produces 1 for every succcessful day & 0 for every other day sum() adds those values
     max_steps = max(steps)
     print(f"{member['name']:<20} {avg:>10} {days_hit:>10} {max_steps:>15}")  
 

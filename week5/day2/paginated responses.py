@@ -19,6 +19,7 @@ page_2 = {
     "page": 2,
     "total_pages": 3,
     "per_page": 3,
+    "next_page": 3,
     "data": [
         {"name": "Grace Achieng", "steps": 11000},
         {"name": "Brian Kamau", "steps": 7400},
