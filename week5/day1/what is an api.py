@@ -5,8 +5,11 @@
 # An API has three core parts. The endpoint is the URL you send your request to.
 #  The request is the message you send, including what you want and any parameters. 
 # The response is what comes back, usually JSON data along with a status code.
-
 # APIs communicate over HTTP, the same protocol browsers use. The method tells the API what action to take.
+# The first package you will install for this course is requests.
+#  It is the standard library for making HTTP calls in Python. 
+#  Calling an API means sending an HTTP request and reading the response.
+#  requests handles all of that with a clean, readable syntax.
 
 # Method	What It Does	                      Example
 # GET	    Retrieve data	                     Fetch today's step count

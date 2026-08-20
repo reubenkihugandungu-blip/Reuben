@@ -1,7 +1,9 @@
 # Byte-compiled / cache files
 __pycache__/
+*.pyc
 *.py[cod]
 *.pyo
+
 
 # Virtual environments
 .venv/

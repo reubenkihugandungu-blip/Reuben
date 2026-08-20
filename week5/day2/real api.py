@@ -11,7 +11,8 @@
 x_response = {
     "data": {
         "id": "2076589716036608320",
-        "text": "Live by a code:\n\n* Loyalty.\n* Strength.\n* Honour.\n*Discipline.\n\nIf you stand for nothing, you fall for anything.",
+        "text": "Live by a code:\n\n* Loyalty.\n* Strength.\n* Honour.\n"
+        "*Discipline.\n\nIf you stand for nothing, you fall for anything.",
         "created_at": "2026-07-14T05:30:00Z",
         "author_id": "748352990",
         "public_metrics": {
@@ -55,6 +56,7 @@ print(f" Bookmarks: {metrics['bookmark_count']:,}")
 print()
 print(f"AUTHOR: @{author['username']} has {author['public_metrics']['followers_count']:,} followers")
 print(f"Read more at: https://x.com/{author['username']}")
+print(f"Engagement rate: {(metrics['like_count'] + metrics['retweet_count'] + metrics['reply_count']) / author['public_metrics']['followers_count'] * 100:.2f}%")
 
 # Calculate the engagement rate as a percentage. 
 # Formula: (likes + retweets + replies) / followers * 100. Add one line that prints it rounded to two decimal places
