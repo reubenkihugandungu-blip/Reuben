@@ -15,7 +15,7 @@ data = {
     "workout_completed": True
 }
 
-print("Name:", data["name"])
+print("Name:", data['name'])
 print("Steps:", data['steps'])
 print("Protocol:", data["fasting_protocol"])
 print("Cold shower:", data["cold_shower"])

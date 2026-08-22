@@ -2,9 +2,18 @@
 # is a set of rules that lets one program request data or actions from another program over a network. 
 # Your code sends a request to an API endpoint (a URL), and the API sends back a response, usually as JSON.
 
+# Think of a phone repair shop counter.
+# You walk in and hand over your phone. 
+# You tell the person at the counter what you need: screen replacement, battery swap. 
+# They go into the workshop, get it done, and bring back the result.
+#  You never go into the workshop yourself. The counter is the API. 
+# It is a defined interface between you and the system doing the work.
+#  You send a request. You get back a response.
+
 # An API has three core parts. The endpoint is the URL you send your request to.
 #  The request is the message you send, including what you want and any parameters. 
 # The response is what comes back, usually JSON data along with a status code.
+
 # APIs communicate over HTTP, the same protocol browsers use. The method tells the API what action to take.
 # The first package you will install for this course is requests.
 #  It is the standard library for making HTTP calls in Python. 

@@ -1,4 +1,4 @@
-# the not keyword flips a condition. True becomes false, false becomes True.
+# the not keyword flips a condition. True becomes false, false becomes True.#
 
 cold_shower = False
 if not cold_shower:

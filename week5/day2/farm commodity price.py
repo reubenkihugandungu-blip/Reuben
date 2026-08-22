@@ -17,32 +17,38 @@ commodity_response = {
     ]
 }
 
-market = commodity_response["market"]
-date = commodity_response["date"]
+market = commodity_response["market"] # Gets the value stored under "market" and saves it in the variable market
+date = commodity_response["date"] # Gets the market date from the dict and saves it in date
 print(f"Market: {market} | Date: {date}")
 print("-" * 55)
 print(f"{'Commodity':<15} {'unit':<12} {'price (KES)':>12} {'change':>8} Status")
 print("-"*55)
 
-available_prices = []
-
+available_prices = []#👉 creates an empty list. Available commodity records will be stored here
+# 👇loops through every dict inside the "prices" list. Each dict is temporarily called item.
 for item in commodity_response["prices"]:
+# 👇checks whether the commodity is unavailable
+# item["available"] is either True or false
+# not reverses the value (False becomes True) therefore, this condition is true when availability is False.
     if not item["available"]:
-        continue
+        continue # skips the current commodity and moves to the next item in the loop.
 
-    available_prices.append(item)
-    if item["change_pct"] > 0:
-        status = "rising"
+    available_prices.append(item)# Adds the available commodity dict to available_prices
+    if item["change_pct"] > 0:# checks whether the commodity's % change is positive
+        status = "rising"# Assigns "rising" if the price increased
     elif item["change_pct"] < 0:
         status = "falling"
     else:
-        status = "stable"
+        status = "stable"# Runs when the % change is neither positive nor negative
 
-    change = f"{item['change_pct']:+.1f}%"
+    change = f"{item['change_pct']:+.1f}%"# + displays a plus sign for positive no,.1f displays one decimal place
     print(f"{item['commodity']:<15} {item['unit']:<12} {item['price_kes']:>12} {change:>8} {status}")
 
 highest_increase = max(available_prices, key=lambda item: item["change_pct"])
 print(f"Highest percentage increase: {highest_increase['commodity']} ({highest_increase['change_pct']:+.1f}%)")
 
+#☝️ max() finds the largest value
+# available_list is the list being searched, key= tells python what value to compare
+# lambda item: item["change_pct"] means: compare items using their "change_pct" value
 # Try this:
 # Add a filter so only available commodities print. Then add a line at the bottom that prints the commodity with the highest percentage increase.

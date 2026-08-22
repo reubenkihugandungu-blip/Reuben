@@ -1,4 +1,4 @@
-#  When a developer calls the X API to fetch a post, the response is a nested JSON object. 
+#👉  When a developer calls the X API to fetch a post, the response is a nested JSON object. 
 # The post text is buried inside a data key. The engagement numbers are inside public_metrics inside data.
 #  The author details are in a separate includes section. 
 # No different from what you have been parsing all lesson.
@@ -11,8 +11,7 @@
 x_response = {
     "data": {
         "id": "2076589716036608320",
-        "text": "Live by a code:\n\n* Loyalty.\n* Strength.\n* Honour.\n"
-        "*Discipline.\n\nIf you stand for nothing, you fall for anything.",
+        "text": "Live by a code:\n\n* Loyalty.\n* Strength.\n* Honour.\n*Discipline.\n\nIf you stand for nothing, you fall for anything.",
         "created_at": "2026-07-14T05:30:00Z",
         "author_id": "748352990",
         "public_metrics": {

@@ -28,7 +28,7 @@ response = {
     }
 }
 
-# Navigate layer by layer
+# Navigate layer by layer👉 by first storing dict items in variables
 name = response["user"]["name"]
 city = response["user"]["location"]["city"]
 steps = response["today"]["steps"]
