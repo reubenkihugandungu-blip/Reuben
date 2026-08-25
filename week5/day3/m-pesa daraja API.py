@@ -19,3 +19,25 @@ credentials = f"{consumer_key}:{consumer_key}"
 encoded = base64.b64encode(credentials.encode()).decode()
 
 #Step 3: In production you POST this to Daraja to get a token:
+# url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?" grant_type=client_credentials"
+# headers = {"Authorization": f"Basic {encoded}"}
+# response = requests.get(url, headers=headers)
+# token = response.json()["access_token"]
+
+# Simulate the token response
+simulated_token = "Q2xpZW50X0lENmJlYjA2NWEtMjA4Ny00OTU2"
+
+print("Credentials encoded (Base64):", encoded[:20] + "...")
+print()
+print("Simulated token received:", simulated_token[:20] + "...")
+print()
+print("In production, pass this token to every M-Pesa API call:")
+print(f' headers = {{"Authorization": "Bearer {simulated_token[:12]}..."}}')
+print()
+print("Example endpoint: STK push (prompt customer to pay)")
+print("  POST" \
+"https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest")
+
+# The M-Pesa Daraja sandbox is free to test. When you build your quotation generator 
+# or appointment bot in Phase 2, connecting M-Pesa payments uses exactly this flow. 
+# Save your Consumer Key and Secret in a .env file, never in your code.
