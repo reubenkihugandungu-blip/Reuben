@@ -1,8 +1,8 @@
-# requests: In VS Code, you install it once, then call requests.get(url).
-#  The response object has a .status_code attribute and a .json() method that converts the JSON body
+# In Vs code (requires: pip install requests)
+# then: call requests.get(url).
+#The response object has a .status_code attribute and a .json() method that converts the JSON body
 #  into a Python dictionary or list.
 
-# In Vs code (requires: pip install requests)
 import requests
 
 # Example: fetch a user's profile from an API

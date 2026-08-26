@@ -3,7 +3,7 @@
 # Use the split and strip techniques from this lesson to parse each line.
 # 
 import io
-# Simulated file: one line per day withs step count
+# Simulated file: one line per day with step count
 weekly_data = """Monday: 9200
 Tuesday: 7500
 Wednesday: 10500

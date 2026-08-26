@@ -31,12 +31,14 @@ response = {
 # Navigate layer by layer👉 by first storing dict items in variables
 name = response["user"]["name"]
 city = response["user"]["location"]["city"]
+country = response["user"]["location"]["country"]
 steps = response["today"]["steps"]
 protocol = response["today"]["fasting"]["protocol"]
 bench = response["today"]["workout"]["bench_press_kg"]# response[today] gets the today dict,[workout] gets the workout dict inside today, [bench_press_kg] gets the value 90 from the bench_press_kg key
 
 print(f"Name:  {name}")
 print(f"City: {city}")
+print(f"Country: {country}")
 print(f"Steps: {steps}")
 print(f"protocol: {protocol}")
 print(f"Bench: {bench} kg")

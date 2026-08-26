@@ -2,6 +2,3 @@ Steps: 9200
 Water: 8 glasses
 Protocol: OMAD
 Cold shower: Yes
-Pages read: 30
-Workout: bench press
-Hobby: playing the guitar
