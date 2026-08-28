@@ -21,14 +21,18 @@ def fetch_members(city="Nairobi", limit=50):
     ]
 
     if mock_response_status != 200:
-        raise RuntimeError(f"API error: status {mock_response_status}")
+        raise RuntimeError(f"API error: status {mock_response_status}")# the error message tells us the API failed and shows the status code
 
-    # Filter by city
+# Filter by city
+# 👇 this list is a comprehension. means take each member m 
+# in mock data and keep only the ones whose city matches the function argument
+# So if city is Nairobi only Nairobi Members stay.   
+
     filtered = [m for m in mock_data if m["city"] == city] 
-    return filtered[:limit]
+    return filtered[:limit] # returns up to 50 Nairobi Members
 
 # call the function
-members = fetch_members(city="Nairobi")
+members = fetch_members(city="Nairobi")# calls the function with city='Nairobi' the function returns a list of member dict for Nairobi. That list is saved in members
 print(f"Fetched {len(members)} members from Nairobi")
-for m in members:
+for m in members: # Starts a loop it goes through each member in the members list one by one
     print(f" {m['name']}: {m['steps']} steps")
