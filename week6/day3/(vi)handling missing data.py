@@ -23,3 +23,6 @@ df["sleep_hr"] = df["sleep_hr"].fillna(df["sleep_hr"].median())
 
 print("\nAfter filling NaN:")
 print(df.to_string())
+
+# For numeric columns, filling with the mean is common for normally distributed data.
+#  Use the median when data has outliers: it is more resistant to extreme values.

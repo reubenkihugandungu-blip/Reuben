@@ -26,18 +26,20 @@ df["status"] = df.apply(weight_status, axis=1)
 #👇 r["breed"] == "Boer" checks the breed
 # if Boer, target = 25, else target = 18
 # then it calculates: target - weight
-# max(0, ...) ensures the gap is never negative
-# if the goat is already above target, the gap becomes 0
+# max(0, ...) ensures the gap is never negative if the goat is already above target, the gap becomes 0
 # axis=1 applies this to every row
 df["weight_gap_kg"] = df.apply(
     lambda r: max(0, (25 if r["breed"] == "Boer" else 18) - r["weight_kg"]), axis=1
 )
 
 # Show underweight animals sorted by gap
-priority = df[df["status"] == "Needs feeding"].sort_values("weight_gap_kg", ascending=False)
-print("Priolity feeding list:")
-print(priority[["goat", 'breed', "weight_kg", "weight_gap_kg"]].to_string(index=False))
+# 👇 df['status'] == "Needs feeding" filters the DataFrame selects only the goats whose status is "Needs Feeding"
+# .sort_values("weight_gap_kg", ascending=False) sorts the filtered DataFrame by the weight gap in descending order, so the goats with the largest gap come first
+# priority is a new DataFrame that contains only the goats that need feeding, sorted by how much weight they need to gain
+priority = df[df["status"] == "Needs feeding"].sort_values("weight_gap_kg", ascending=False) 
+print("Priority feeding list:")
+print(priority[["goat", 'breed', "weight_kg", "weight_gap_kg"]].to_string(index=False))# priority selects only the columns to display from the priority DataFrame
 
-#☝️.to-string(index=fasle) converts the table to text
+#☝️.to-string(index=false) converts the table to text
 # hides the DataFrame index
 # makes the output cleaner
