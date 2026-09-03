@@ -28,11 +28,11 @@ data = {
 }
 df = pd.DataFrame(data)
 
-print("Shape: {df.shape}")
-print("\nColumns: {list(df.columns)}")
+print(f"Shape: {df.shape}")
+print(f"\nColumns: {list(df.columns)}")
 print(f"\nData types:")
 print(df.dtypes)
-print(f"\nMissing values; {df.isna().sum().sum()}")
+print(f"\nMissing values: {df.isna().sum().sum()}")
 print(f"\nFirst 3 rows:")
 print(df.head(3).to_string())
 

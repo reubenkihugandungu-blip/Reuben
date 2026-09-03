@@ -10,11 +10,11 @@ data = {
     "cold_shower": [True, True, False, True, True, True, True]
 }
 
-df = pd.DataFrame(data)
+df = pd.DataFrame(data) # Converts the dictionary into a dataframe
 
 print("Shape (rows, cols):", df.shape)
-print("\nColumns:", list(df.columns))
+print("\nColumns:", list(df.columns)) # df.columns is an index of column names, so we convert it to a list for better readability
 print("\nData types:")
 print(df.dtypes)
-print("\nFirst 3 rows:")
-print(df.head(3).to_string())
+print("\nFirst 3 rows:") # Print a header before showing the first 3 rows of the dataframe
+print(df.head(3).to_string()) # head(3) selects the first 3 rows of the dataframe, and to_string() prints them in a readable format
