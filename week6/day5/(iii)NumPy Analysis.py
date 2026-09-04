@@ -13,18 +13,27 @@ sleep = np.array([7.5, 8.0, 6.5, 7.0, 9.0, 7.5, 8.0, 6.0, 8.5, 7.0, 7.5, 9.0, 7.
 
 print("=== 28-Day NumPy Analysis ===")
 print(f"\nSteps")
-print(f" Mean:    {np.mean(steps):,.0f}")
+print(f" Mean:    {np.mean(steps):,.0f}") # adds commas and rounds to zero decimal places
 print(f" Std dev:  {np.std(steps):,.0f}")
 print(f" 25th percentile: {np.percentile(steps, 25):,.0f}")
 print(f" 75th percentile: {np.percentile(steps, 75):,.0f}")
 print(f" Days 10k+: {np.sum(steps >= 10000)}/28")
 
+# 👇np.max(bench)bfinds the highest weight
+# np.argmax(bench) finds the index of the highest weight 
+# NumPy positions start at 0 so +1 converts it to a human readable day number (1-28)
+# bench[-7:] selects the last 7 values
+# bench[:7] selects the first 7 values
+# .mean() calculates each group's average
+# if the last week's average is higher it prints increasing/ otherwise it p flat
 print(f"\nBench Press:")
 print(f" Mean:    {np.mean(bench):.1f} kg")
 print(f" Max:     {np.max(bench)} kg (Day {np.argmax(bench)+1})")
 print(f" Trend:   {'increasing' if bench[-7:].mean() > bench[:7].mean() else 'flat/decreasing'}")
 
 # Correlation: do more steps correlate with better bench?
+# np.corrcoef(steps, bench) creates a correlation matrix
+# [0, 1] extracts the correlation btwn the two different arrays, result is stored in corr
 corr = np.corrcoef(steps, bench)[0, 1]
 print(f"\nCorrelation steps vs bench: {corr:.3f}")
 print("Interpretation:", "positive relationship" if corr > 0.3 else "weak/no relationship")
