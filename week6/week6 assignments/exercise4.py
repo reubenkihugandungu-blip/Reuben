@@ -1,6 +1,6 @@
 # NUMPY challenge
 import numpy as np
-# # Create an array of 10 random integers between 1 and 100
+# Create an array of 10 random integers between 1 and 100
 # Print the mean, max, min, and standard deviation
 arr = np.array([23, 67, 45, 89, 12, 56, 78, 34, 90, 41])
 print(f"Mean: {arr.mean():.2f}")
