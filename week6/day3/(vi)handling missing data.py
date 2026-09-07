@@ -15,7 +15,7 @@ print("Original with NaN:")
 print(df.to_string())
 
 print("\nRows with any missing value:")
-print(df[df.isna().any(axis=1)].to_string())
+print(df[df.isna().any(axis=1)].to_string()) #.any(axis=1) checks each row and asks. 'Does this row contain at least one missing value?'
 
 # Fill missing steps with the column mean
 df['steps'] = df['steps'].fillna(df['steps'].mean())

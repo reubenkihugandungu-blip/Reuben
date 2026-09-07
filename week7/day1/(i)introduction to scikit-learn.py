@@ -12,7 +12,7 @@
 #  your steps are lower on day 3. The trainer did not write these rules. They observed the pattern.
 #  That is what a machine learning model does with data.
 
-# Type	What It Does	Known Example
-# Supervised (regression)	Predicts a number	Predict bench press from sleep + steps
-# Supervised (classification)	Predicts a category	Predict OMAD vs 2MAD from daily metrics
-# Unsupervised (clustering)	Groups similar records	Group members by training style
+# Type	         What It Does	      Known Example
+# Supervised     (regression)	     Predicts a number	Predict bench press from sleep + steps
+# Supervised    (classification)	 Predicts a category	Predict OMAD vs 2MAD from daily metrics
+# Unsupervised    (clustering)	     Groups similar records	Group members by training style

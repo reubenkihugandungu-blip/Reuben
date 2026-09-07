@@ -1,6 +1,6 @@
 # Try this:
-#Add a "region" column (Nairobi, Kiambu, Machakos).
-#  Group by both region and material to find which region earns most per job type.
+# Add a "region" column (Nairobi, Kiambu, Machakos).
+# Group by both region and material to find which region earns most per job type.
 import pandas as pd
 
 df = pd.DataFrame({
