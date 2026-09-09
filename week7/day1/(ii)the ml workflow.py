@@ -1,4 +1,6 @@
-# Every scikit-learn project follows the same five steps. Prepare data. Split into train/test.
+# Every scikit-learn project follows the same five steps. 
+# Prepare data. 
+# Split into train/test.
 # Create the model object.
 # Fit (train) it on training data. 
 # Evaluate on test data.
@@ -39,14 +41,14 @@ print(f"Labels shape:   {y.shape}")
 # with rows appro 22 rows are used for training, 6 rows are used for testing
 # random_state=42 makes the script repeatable. the same rows go into training and testing everytime the script runs
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-print(f"\nTraining rows: {X_train.shape[0]}")
-print(f"Test rows:     {X_test.shape[0]}")
+print(f"\nTraining rows: {X_train.shape[0]}") # prints how many samples are in the training set
+print(f"Test rows:     {X_test.shape[0]}") # prints how many samples are in the test set
 
 # Step 3: Create and train the model
-model = LinearRegression()
-model.fit(X_train, y_train)
+model = LinearRegression() # creates a linear regression model object
+model.fit(X_train, y_train) # trains the model using the training data. learns the rship btwn sleep, water & step count
 
 # Step 4: Evaluate
-score = model.score(X_test, y_test)
-print(f"\nModel R2 score: {score:.3f}")
-print("(1.0 = perfect, 0 = no better than guessing the mean)")
+score = model.score(X_test, y_test) # tests how well the model predicts the test data
+print(f"\nModel R2 score: {score:.3f}") # prints the model accuracy score with 3 decimal places
+print("(1.0 = perfect, 0 = no better than guessing the mean)") # 1.0 perfect prediction

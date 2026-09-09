@@ -49,8 +49,8 @@ print("Predictions for new days:")
 
 # starts a loop
 # zip(new_days, predictions) pairs each input day with its matching prediction
-# enumerate(..) gives each pair a number index, so it will the first day, the the second day and so on
-# Unpacks the two values from one row of new_days ex inputs = [8.0, 8], sleep = 8, water = 8
+# enumerate(..) gives each pair a number index, so it will be the first day, the the second day and so on
+# sleep, water = inputs Unpacks the two values from one row of new_days ex inputs = [8.0, 8], sleep = 8, water = 8
 for i, (inputs, pred) in enumerate(zip(new_days, predictions)):
     sleep, water = inputs 
     print(f"  Sleep={sleep}h, Water={water}g => predicted steps: {pred:,.0f}")
