@@ -22,3 +22,7 @@ y = np.array([1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,0])
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 clf = RandomForestClassifier(n_estimators=10, random_state=42)
 clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
+
+print("Job payment prediction report:")
+print(classification_report(y_test, y_pred, target_names=["Unpaid", "Paid"]))

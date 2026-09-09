@@ -7,7 +7,7 @@
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix # imports the function used to compare actual predictions with model predictions
 
 X = np.array([
               [7.5,7,80],[8.0,8,82],[6.5,6,78],[7.0,9,85],[9.0,8,80],[7.5,7,83],[8.0,8,84],
@@ -28,6 +28,7 @@ clf = RandomForestClassifier(n_estimators=20, random_state=42)
 clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 
+# creates the confusion matrix by comparing y_test(the actual answers), y_pred the model's answers
 cm = confusion_matrix(y_test, y_pred)
 print("Confusion matrix:")
 

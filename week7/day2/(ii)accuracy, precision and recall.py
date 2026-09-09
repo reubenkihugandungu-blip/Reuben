@@ -11,6 +11,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
 
+# classification report displays precision, recall, F1-score and support
+# Confusion matrix displays counts of correct and incorrect predictions
 # Features: [sleep_hr, water_glasses, bench_kg]
 X = np.array([
     [7.5,7,80],[8.0,8,82],[6.5,6,78],[7.0,9,85],[9.0,8,80],[7.5,7,83],[8.0,8,84],
@@ -24,11 +26,16 @@ steps = np.array([
                   9500,10300,8600,11500,8200,9800,10600,
                   9000,10100,8400,10900,7500,9600,10400
                   ])
-y = (steps >= 10000).astype(int)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
-clf = RandomForestClassifier(n_estimators=20, random_state=42)
+y = (steps >= 10000).astype(int) # converts Boolean values(True/False) into integers (1/0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42) # uses 25% of the data for testing/ =42 ensures the same split each time
+clf = RandomForestClassifier(n_estimators=20, random_state=42)# builds 20 decision trees/ =42 makes the model's randomness reproducible
+
+# 👇 Trains the model using the training features and their known labels
+# y_pred Uses the trained model to predict whether each test person reached 
+# 10000 steps results are stored in y_pred, 
 clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 
 print("Classification report:")
 print(classification_report(y_test, y_pred, target_names=["Below 10k", "Hit 10k"]))
+# ☝️ compares the actual labels, y_test with the predicted labels y_pred
