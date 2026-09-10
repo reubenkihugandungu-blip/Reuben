@@ -1,4 +1,10 @@
-# # In VS Code (requires: pip install openai, python-dotenv)
+# Think of a briefed analyst.
+# You give them a job description (system prompt):   "You are an SMP fitness coach. Be direct and practical.
+# " Then you give them a task (user message):   "James slept 6 hours and hit 7,800 steps today. 
+# What should he do differently tomorrow?"  They read both, then respond in the voice you specified.
+#  The messages list is that briefing plus the ongoing conversation.
+
+# In VS Code (requires: pip install openai, python-dotenv)
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
