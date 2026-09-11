@@ -3,6 +3,8 @@
 # Those values pass directly into the coaching layer, which returns a message.
 #  One function, analyze_day(), wraps both steps and returns a single result dict.
 
+# classifier + coaching in one function
+
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split

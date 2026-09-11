@@ -45,3 +45,11 @@ def analyze_day(sleep_hr, water_glasses, bench_kg, day_label=None):
         "confidence": confidence,
         "coaching":   coaching,
     }
+
+# Tip: Load the saved model with clf = joblib.load("smp_coach_model.pkl") in any script that needs predictions.
+# This way the model trains once, and every subsequent run skips training entirely. 
+# On a large dataset, this saves seconds to minutes per run.
+
+# The same pipeline applies to any domain. Swap the SMP fitness data for a dairy farm's weekly milk log, 
+# a Jua Kali workshop's job history, 
+# or a school's attendance records, and the classifier, coaching layer, and batch processing code stay the same.
