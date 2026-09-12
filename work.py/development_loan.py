@@ -97,7 +97,7 @@ if __name__ == "__main__":
     # SINGLE INPUT POINT: change principal here (100,000 - 1,000,000)
     # -----------------------------------------------------------
     terms = LoanTerms(
-        principal=300000,
+        principal=325000,
         annual_rate_pct=12,
         term_months=24,
         loan_name="Development Loan",
