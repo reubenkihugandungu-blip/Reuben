@@ -4,10 +4,10 @@
 // let declares a variable that may be reassigned later. 
 // Use const by default. Switch to let only when you know the value will change.
 
-// Keyword	Reassignable?     Use case
-// const	     No	             Configuration, names, fixed data
-// let	    Yes	             Counters, running totals, loop variables
-// var	    Yes	             Old code only. Avoid in new code.
+// Keyword	 Reassignable?     Use case
+// const	     No	          Configuration, names, fixed data
+// let	         Yes	      Counters, running totals, loop variables
+// var	         Yes	      Old code only. Avoid in new code.
 
 // Tip: 
 // In Python, variable type is determined at runtime and can change freely. 
@@ -16,7 +16,7 @@
 // A const array can still have items added to it.\
 
 // const for fixed values
-const athleteName = "Brian Otieno";
+const athleteName = "Wanjiku";
 const protocol = "SMP Phase 1";
 const targetSteps = 10000;
 

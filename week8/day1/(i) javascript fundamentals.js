@@ -10,6 +10,6 @@
 // The shop does not close and reopen. It just responds.
 
 // Python and JavaScript solve similar problems with different syntax.
-//] The core concepts (variables, loops, functions, conditionals) are the same. 
+// The core concepts (variables, loops, functions, conditionals) are the same. 
 // The differences are mostly in how you write them.
 
