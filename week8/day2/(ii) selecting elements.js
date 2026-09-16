@@ -3,10 +3,10 @@
 // These are the two methods you will use for almost everything.
 
 // Selector	            Selects           	               Python equivalent
-// #myId	     Element with id="myId"	                  dict lookup by unique key
+// #myId	       Element with id="myId"	                  dict lookup by unique key
 // .myClass	     All elements with class="myClass"	      list filter by attribute
-// p	         All paragraph elements	                  list filter by type
-// div > span	 span elements directly inside a div	  nested dict access
+// p	           All paragraph elements	                  list filter by type
+// div > span	   span elements directly inside a div	    nested dict access
 
 // This page has a hidden element with id "d1target"
 //let's select it, read it, then change it
