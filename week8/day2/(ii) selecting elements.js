@@ -29,3 +29,28 @@ console.log("\nNumber of .d1item elements:", items.length);
 items.forEach((item, index) => {
   console.log(`Item ${index}: ${item.textContent}`);
 });
+
+// another example
+
+// Select an element
+const heading = document.querySelector('h1');
+
+// Change its text
+heading.textContent = 'Hello, DOM!';
+
+// Change its style
+heading.style.color = 'red';
+
+// Add a click event
+heading.addEventListener('click', () => {
+  alert('You clicked the heading!');
+});
+
+// The DOM is what makes web pages interactive rather than static. 
+// Without it, JavaScript would have no way to respond to clicks, update content dynamically,
+//  or build things like forms, animations, 
+// or single-page apps (React, Vue, etc. are all built on top of DOM manipulation, just with extra abstraction layers).
+
+// One thing worth knowing:
+//  the DOM is not part of the JavaScript language itself — it's a Web API provided by the browser.
+//  That's why DOM methods work in browsers but not in environments like Node.js

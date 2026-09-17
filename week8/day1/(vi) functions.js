@@ -12,15 +12,14 @@ const assessDay = (steps, goal = 10000) => {
 const analyzeDay = (sleep, water, steps) => {
   const hitGoal = steps >= 10000;
   let rating;
-  if (sleep >= 7.5 && water >= 8 && hitGoal) {
-    rating = "Excellent";
-  } else if (hitGoal) {
-    rating = "Good";
-  } else if (sleep >= 7.0) {
-    rating = "Average";
-  } else {
-    rating = "Below target";
-  }
+  if (sleep >= 7.5 && water >= 8 && hitGoal) 
+    {rating = "Excellent";}
+  else if (hitGoal)
+    {rating = "Good";}
+  else if (sleep >= 7.0) 
+    {rating = "Average";}
+  else 
+    {rating = "Below target";}
   return { sleep, water, steps, hitGoal, rating };
 };
 
@@ -34,7 +33,8 @@ const days = [
 
 days.forEach(([sleep, water, steps]) => {
   const result = analyzeDay(sleep, water, steps);
-  console.log(`Sleep:${result.sleep}h  Water:${result.water}gl  Steps:${result.steps.toLocaleString()}  --> ${result.rating}`);
+  console.log(`Sleep:${result.sleep}h  Water:${result.water}gl  
+    Steps:${result.steps.toLocaleString()}  --> ${result.rating}`);
 });
 
 // for...of loop

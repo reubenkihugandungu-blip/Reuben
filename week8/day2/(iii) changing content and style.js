@@ -16,7 +16,7 @@ panel.textContent = "SMP Daily Report";
 console.log("Set text:", panel.textContent);
 
 // Change style properties
-panel.style.color = "#4ecca3";
+panel.style.color = "#cc4e4e";
 panel.style.fontWeight = "bold";
 panel.style.padding = "8px";
 panel.style.background = "#0a1628";
