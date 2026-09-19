@@ -1,6 +1,8 @@
 # and means both conditions must be true, for the whole thing to be true.
 #  or means atleast one must be true.
 
+# DAILY DISCIPLINE CHECK
+
 steps = 7900
 water_glasses = 8
 cold_shower = True
@@ -15,3 +17,5 @@ if sleep_hours >= 7 and cold_shower:
     print("Sleep and cold shower: both done.")
 else:
     print("Sleep or cold shower missed.")
+
+# Try changing cold_shower to False and running again

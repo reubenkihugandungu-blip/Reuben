@@ -1,5 +1,7 @@
-# putting an if statement inside another if statement.
+# putting an if statement inside another if statement. This is called nesting
 # it lets you check a second condition only if the first one has passed.
+
+# NESTED CONDITIONS: Training session check
 
 workout_done = True
 weight_lifted_kg = 6000
@@ -13,4 +15,6 @@ if workout_done:
         print("Solid session. No new record today.")
 else:
     print("Rest day. No workout logged.")
-# 
+
+# The inner if only runs when workout_done is True. If it is False, Python goes straight to the outer
+#  else and never even looks at the inner block.

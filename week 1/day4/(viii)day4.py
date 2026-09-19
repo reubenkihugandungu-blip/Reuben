@@ -1,3 +1,16 @@
+# Create a file called day4.py. Write a daily discipline grader. Store the following values:
+
+# Steps: 7500
+# Sleep hours: 6
+# Water glasses: 5
+# Cold shower: False
+# Pages read: 15
+
+# Write conditions that grade each one and print a final verdict. For steps: excellent if above 10000,
+#  good if above 7500, needs work otherwise. For sleep: good if 7 or more hours, low if below. 
+# For water: good if 8 or more glasses, low if below. For cold shower: completed or skipped.
+#  For pages: good if 10 or more, low if below. At the end, print a one-line summary verdict.
+
 # Daily discipline grader
 
 steps = 7500

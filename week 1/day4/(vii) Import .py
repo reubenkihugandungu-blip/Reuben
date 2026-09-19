@@ -3,6 +3,9 @@
 # Python ships with many modules built in. When you write import math,
 #  you are telling Python: "load the math module so I can use its tools."
 #  After that line, you can call functions like math.sqrt() or math.floor() anywhere in your script.
+
+# IMPORT IN ACTION: USING THE MATH MODULE
+
 import math
 
 steps = 9578
@@ -20,5 +23,6 @@ elif progress_pct >= 80:
     print("Close. Push the last", target - steps, "steps")
 else:
     print("Still", target - steps, "steps to go.")
+    
 # The pattern is always the same: import module_name at the top of your file,
 #  then module_name.function() wherever you use it.
