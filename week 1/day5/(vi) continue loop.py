@@ -1,6 +1,8 @@
 # continue skips the rest of the current loop iteration and jumps straight to the next one.
 #  The loop does not stop. It just skips the current item.
 
+# CONTINUE: SKIP INVALID DAYS
+
 daily_steps = [3200, 7100, 9800, 4100, 10500, 6400] # a list of step counts for each day.
 minimum = 7000 # threshold for a valid day.
 

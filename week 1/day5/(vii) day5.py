@@ -1,3 +1,15 @@
+# Exercise
+# Create a file called day5.py. You have a list of 7 daily step counts for one week of the SMP:
+
+[8200, 5100, 11300, 6800, 9400, 4200, 10100]
+
+# Write a program that does all three of the following:
+
+# Use a for loop to print each day's count and whether it hit 8000 steps (the SMP daily target)
+# Use continue to skip any day below 5000 steps when calculating the weekly average
+# Use a while loop to count how many consecutive days from the start hit the target before the first miss
+# Print a final weekly summary: total valid days, average steps, and the consecutive streak count.
+
 daily_steps = [8200, 5100, 11300, 6800, 9400, 4200, 10100] #creates a list named daily steps
 minimum_for_average = 5000 # sets threshold of 5000 steps. days above this count to be included in the average calculation.
 target = 8000 # sets the daily goal to 8000 steps for determining hits vs misses.
