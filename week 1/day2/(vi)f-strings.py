@@ -1,6 +1,8 @@
 # f is followed by "" and curly   {}
 # python replaces the curly braces with actual value. this gives you full control over how the output looks.
 
+# F-STRINGS: THE CLEANER WAY TO PRINT
+
 steps = 9200
 water_glasses = 8
 skill = "Upholstery"

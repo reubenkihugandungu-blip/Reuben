@@ -1,3 +1,13 @@
+# Exercise
+# Create a file called day3.py. You are a personal trainer tracking a client's workout. 
+# Write a program that stores the following data and calculates a full session report:
+
+# Number of exercises: 6
+# Sets per exercise: 4
+# Reps per set: 10
+# Average weight per rep: 60 kg
+# Session duration in minutes: 45
+
 # Workout session report
 
 number_of_exercises = 6

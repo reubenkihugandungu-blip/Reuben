@@ -1,3 +1,8 @@
+# An operator is a symbol that performs an action. + adds. - subtracts. * multiplies. / divides. 
+# Python evaluates the expression and gives you the result.
+
+# ARITHMETIC OPERATORS 
+
 morning_steps = 4200
 afternoon_steps = 5000
 
@@ -17,3 +22,5 @@ print(f"weekly step target: {weekly_target}")
 daily_average = 65000 / 7 # use integer division // for to get a whole number
 print(f"Daily average this week: {daily_average}")
 
+# Notice that division always returns a decimal, even when the answer is a whole number.
+#  65000 / 7 gives you 9285.714....If you want only the whole number part, use integer division.

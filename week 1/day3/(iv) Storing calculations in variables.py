@@ -1,4 +1,10 @@
 # storing calculations in variables
+
+# The real power of operators is not just doing the calculation it is storing the result so you can use it somewhere else.
+#  You can build up a full report from a few stored calculations:
+
+ # BUILD A WEEKLY TRAINING REPORT
+
 bench_press_sets = 4
 reps_per_set = 15
 weight_per_rep_kg = 40

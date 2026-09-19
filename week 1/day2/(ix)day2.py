@@ -1,3 +1,18 @@
+# Exercise
+
+# Create a file called day2.py. Build a personal stats summary for one day of the SMP.
+#  Store each value as the correct data type:
+
+# Your name (string)
+# Steps walked today (integer)
+# Hours of sleep (float)
+# Water glasses (integer)
+# Cold shower completed (boolean)
+# Current skill being learned (string)
+
+# Then print a formatted summary using f-strings.
+#  One line per metric. End with a line that says how many steps are left to reach 10,000.
+
 name = "Reuben"
 steps_walked_today = 8421
 hours_of_sleep = 7.5
