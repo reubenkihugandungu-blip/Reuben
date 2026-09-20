@@ -1,8 +1,9 @@
-# Nested data is when lists and dictionaries contain other lists or dictionaries as values.
+# Nested data means putting one data structure inside another. 
+# A list can contain dictionaries. A dictionary can contain lists. 
 #  The outer structure holds the inner one.
 #  You access the inner values by chaining square brackets together.
 
-# a list of dictionaries.
+#  A list of dictionaries.
 
 week_log = [
     {"day": "Monday", "steps": 9200, "protocol": "OMAD", "cold_shower": True},

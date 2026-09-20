@@ -2,6 +2,7 @@
 # Inside the loop, use the key names to get what you need.
 # below is a code that loops through the weekly log, checks whether each day reached at least 8000 steps,
 #  and prints the day, step count, and goal status.
+
 week_log = [
     {"day": "Monday", "steps": 9200, "protocol": "OMAD"},
     {"day": "Tuesday", "steps": 10500, "protocol": "2MAD"},
@@ -13,3 +14,6 @@ for log in week_log: # each loop iteration assigns one dictionary from week_log 
     status = "Goal hit" if log["steps"] >= 8000 else "Below goal" # checks the "steps" value inside the current log dictionary.
     print(log["day"], log["steps"], status) # log["day"] day name log["steps"] the step count, status either goal hit or below goal.
 
+# Try this:
+# Add a "cold_shower" key to each dictionary with True or False values. 
+# Then update the loop to also print whether the cold shower was done.

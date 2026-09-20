@@ -1,5 +1,6 @@
 # To get a value from inside a nested structure, chain your square brackets.
 #  First bracket picks the list item. Second bracket picks the dictionary key.
+
 # week_log[0]["steps"] steps from the first day (Monday)
 # week_log[2]["day"] Day name of the third record (Wednesday)
 

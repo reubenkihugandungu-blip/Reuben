@@ -1,4 +1,8 @@
-# my_log
+# EXERCISE
+# Create a dictionary called my_log with at least five entries: steps, water glasses,
+#  fasting protocol, cold shower (True/False), and sleep hours. 
+# Then write a loop that prints every key and value.
+#  After the loop, check if steps is greater than or equal to 8000 and print a message based on the result.
 
 my_log = {        # start creating a dictionary and assign it to the variable.
     "steps": 9400, # dict entry; key "steps" value 9400

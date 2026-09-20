@@ -1,4 +1,4 @@
-# a list called week_log with 5 dictionaries.
+# Create a list called week_log with 5 dictionaries.
 #  Each dictionary should have keys for day, steps, and protocol.
 #  Write a loop that prints each day's details. 
 # After the loop, calculate and print the average step count across all five days.

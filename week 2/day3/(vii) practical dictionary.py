@@ -1,4 +1,5 @@
 # a dictionary tracking an SMP client's profile for a personal training session:
+
 client = {
     "name": "James",
     "weight_kg": 84.5,
