@@ -2,6 +2,8 @@
 # The full contact book is a list of those dictionaries. 
 # Start by creating five contacts and printing them.
 
+# create the data structure and verify it prints correctly
+
 contacts = [
     {"name": "James Omondi", "phone": "0712345678", "skills": "welding",  "city": "Nairobi"},
     {"name": "Sandra Weru", "phone": "0723456789", "skill": "tiling",   "city": "Mombasa"},
@@ -12,4 +14,4 @@ contacts = [
 print("Contacts stored:", len(contacts))
 print(contacts[0]["phone"])
 
-#
+

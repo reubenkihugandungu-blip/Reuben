@@ -1,5 +1,6 @@
 # Loop through the list and compare each contact's name to the name you are searching for. 
-# If it matches, print that contact's details..
+# If it matches, print that contact's details.
+
 # search by name and print the result.
 
 
@@ -26,5 +27,6 @@ for contact in contacts:
 
 # checks whether the loop finished without finding a match.
 # no match it prints a message saying contact was not found.
+
 if not found:
     print("No contact found with name:", search_name)

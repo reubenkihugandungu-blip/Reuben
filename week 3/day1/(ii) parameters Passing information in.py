@@ -1,4 +1,5 @@
 # Parameters - passing information in.
+
 # A parameter is a variable in the function definition, that receives a value when you call it. 
 # In this example, the parameter is steps.
 # The function will check the value of steps and print a message based on the value.
@@ -13,6 +14,8 @@ def check_steps(steps):
         print(steps, "steps - Below goal")
         
 # call with different values/arguments
+
 check_steps(9200) # 9200 is an argument
 check_steps(7500)
 check_steps(11000)
+
