@@ -1,5 +1,6 @@
 # Instead of importing the whole module, you can import just the functions you need using from module import function.
 #  Then you call the function directly without the module prefix.
+
 # Use import math when you need many things from a module.
 #  Use from math import sqrt when you only need one or two specific functions. 
 # Both approaches are common in Python code.

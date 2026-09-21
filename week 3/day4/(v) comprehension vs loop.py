@@ -17,4 +17,4 @@ statuses = ["Goal hit" if s >= 8000 else "Below goal" for s in weekly_steps]
 for i, status in enumerate (statuses):
     print(f"Day {i+1}: {weekly_steps[i]} steps - {status}")
 
-
+# Tip: If your list comprehension is getting long or hard to read, switch to a regular loop. Clarity beats cleverness.

@@ -16,4 +16,7 @@ print("Today'skill focus:", random.choice(skills))
 # shuffle a list
 random.shuffle(skills)
 print("Shuffled:", skills)
-    
+
+# Try this:
+# Run the code above several times. Notice that the output changes every time because the numbers 
+# are random. This is how you build training variations or randomised daily challenges.

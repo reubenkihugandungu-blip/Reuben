@@ -1,3 +1,6 @@
+# Scope controls where a variable can be seen and used. A variable created inside a function only exists inside
+#  that function. A variable created outside any function exists everywhere.
+
 # Local scope: a variable created inside a function. It only exists while the function is running. 
 # It disappears when the function ends. Global scope: a variable created outside all functions. 
 # It exists for the entire program and can be read inside functions.
@@ -12,3 +15,7 @@ check_today(7000) # calls check_today with steps=7000
 
 # This will throw an error because result is a local variable and cannot be accessed outside the function.
 # print(result)
+
+# Note: Functions can read global variables, but they cannot change them without using the global keyword.
+#  In practice, pass values as parameters rather than relying on global variables. 
+# It keeps functions independent and predictable.

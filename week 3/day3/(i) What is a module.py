@@ -1,6 +1,7 @@
 # A module is a collection of functions and tools packaged into a single file.
 #  Use import module_name to load it into your program. 
 # Then call functions from it using the format module_name.function_name().
+
 # math gives you mathematical functions beyond basic arithmetic: 
 # square roots, rounding, powers, and constants like pi.
 

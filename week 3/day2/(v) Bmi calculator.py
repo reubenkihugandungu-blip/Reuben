@@ -19,4 +19,7 @@ category = bmi_category(bmi)# calls the bmi_category function with the calculate
 
 print(f"Weight: {weight}kg | Height: {height}m")
 print(f"BMI: {bmi} | Category: {category}") # prints the calculated bmi and its corresponding category to the console.
-# 
+
+# Try this:
+# Change the weight and height values and run it again. Notice that neither function cares about the other's
+#  internal variables. Each one only sees what you pass in.

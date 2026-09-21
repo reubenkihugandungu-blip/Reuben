@@ -12,3 +12,7 @@ print("km :", km_walked)
 calories_per_step =[round(s * 0.04, 2) for s in weekly_steps]
 print("Steps:", weekly_steps)
 print("Calories burnt:", calories_per_step)
+
+# Try this:
+# Change the formula to convert steps to calories (approximately 0.04 calories per step).
+#  Run it and compare the output.
