@@ -1,4 +1,5 @@
 # Use open("filename", "w") to write. 
+
 # "w" means create the file if it doesn't exist, or overwrite it if it does. 
 # as f — Assigns the opened file object to the variable f, so you can use f to interact with the file
 # The with statement automatically closes the file when the block ends, even if an error occurs.

@@ -1,3 +1,5 @@
+# SEE THE ERROR
+
 # This will crash
 steps = "nine thousand"
 goal = 8000
