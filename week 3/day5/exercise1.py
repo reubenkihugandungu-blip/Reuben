@@ -1,3 +1,5 @@
+# Exercise1: WRITE FUNCTIONS
+
 # Write a function called greet that takes a name
 # and returns a greeting string
 

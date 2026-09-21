@@ -1,8 +1,12 @@
+# Complete fitness and Discipline Report
+
 # This combines all four calculators into one full weekly report.
 #  Adjust the values in the data section at the top and run it.
 
 import math
 from datetime import date
+
+# Run full report
 
 # ---- DATA ----
 client_name = "James"

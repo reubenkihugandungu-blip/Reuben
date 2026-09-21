@@ -1,3 +1,5 @@
+# CHALLENGE
+
 # Write a function that takes a list of scores
 # and returns the average, highest, and lowest
 

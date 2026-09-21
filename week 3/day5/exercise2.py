@@ -1,3 +1,5 @@
+# DEFAULT PARAMETERS
+
 # Write a function called power(base, exp=2)
 # that returns base raised to exp
 
