@@ -32,3 +32,7 @@ print(f"Worst day (eggs): {df.loc[df['eggs'].idxmin(), 'day']} ({df['eggs'].min(
 # df.loc[..] looks up that row
 # 'day' gets the day name
 # df['eggs'].min() gets the lowest egg count
+
+# Try this:
+# Add a "revenue_kes" column where each egg earns KES 18. Calculate it as df["eggs"] * 18 and 
+# print the weekly total revenue.

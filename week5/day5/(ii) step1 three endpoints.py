@@ -2,13 +2,13 @@
 # Here each returns a hardcoded dict that mirrors an API response exactly.
 
 # endpoint 1 
-# GET /v1/members?city=Nairobi: returns a list of members with their today stats.
+ GET /v1/members?city=Nairobi: returns a list of members with their today stats.
 
 # endpoint 2
-# GET /v1/weekly-summary: returns aggregated step data for the past 7 days across all members.
+ GET /v1/weekly-summary: returns aggregated step data for the past 7 days across all members.
 
 # endpoint 3
-# GET /v1/skills/active: returns the list of active SMP skills being taught this week.
+GET /v1/skills/active: returns the list of active SMP skills being taught this week.
 
 # STEP 1: PREVIEW ALL THREE ENDPOINTS
 

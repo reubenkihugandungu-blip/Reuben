@@ -1,7 +1,10 @@
 # What is a DataFrame
+
 # A DataFrame is a two-dimensional data structure with labeled rows and columns. 
 # Think of it as a Python spreadsheet. Each column is a Series (a labeled list).
 #  Each row is one record. You can filter, sort, group, compute, and reshape the whole table in a single line.
+
+# Create your first Dataframe
 
 import pandas as pd
 

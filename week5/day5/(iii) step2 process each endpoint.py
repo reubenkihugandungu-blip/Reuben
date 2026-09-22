@@ -1,3 +1,5 @@
+# STEP 2: PROCESS ALL THREE
+
 def process_members(members, step_goal=10000):
     goal_met = [m for m in members if m["steps"] >= step_goal]
     avg_steps = round(sum(m["steps"] for m in members) / len(members))

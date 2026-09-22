@@ -1,5 +1,7 @@
 # Before analyzing any dataset, inspect it. These four commands tell you what you are working with.
 
+# INSPECT THE DATAFRAME
+
 import pandas as pd
 
 data = {
