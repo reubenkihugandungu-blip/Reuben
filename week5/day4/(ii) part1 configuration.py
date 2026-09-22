@@ -1,5 +1,6 @@
 # Put all settings at the top of the script. Do not scatter URL strings and limit values throughout your code.
 #  When something needs to change, you change it in one place.
+
 # Configuration Block
 import os
 

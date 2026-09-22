@@ -3,7 +3,9 @@
 # This lesson shows you how to organize API code so it is readable, reusable, and easy to extend.
 
 #👉 The Four-Part Structure
-# A well-organized API script has four parts. Configuration holds all settings (URL, keys, parameters) in one place.
+# A well-organized API script has four parts. 
+
+# Configuration holds all settings (URL, keys, parameters) in one place.
 # Fetch makes the HTTP request and handles errors.
 # Process transforms raw data into what you need. 
 # Output prints, saves, or sends the results.

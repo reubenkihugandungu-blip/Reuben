@@ -2,6 +2,9 @@
 # Exceeding the limit returns a 429 error.
 #  For high-volume scripts, add a delay between requests using time.sleep()..
 
+# Try this: Add a steps_goal check to fetch_member.
+#  Print "Goal met" next to any member with 10,000+ steps.
+
 # Rate limit simulation
 import time
 
@@ -30,3 +33,4 @@ for mid in member_ids:
     print(f"Fetched: {data['name']} ({data['steps']} steps){goal_status}")
     # In production: time.sleep(0.5) to avoid rate limits
 print(f"\nTotal fetched: {len(results)}")
+

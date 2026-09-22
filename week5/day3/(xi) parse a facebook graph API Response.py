@@ -1,3 +1,5 @@
+## PARSE A FACEBOOK GRAPH API RESPONSE
+
 import os
 
 # Step 1: load the token from environment (never hardcode it)
@@ -36,7 +38,8 @@ print(" response = requests.get(url, params={'access_token': token, 'fields': '.
 print(" data = response.json()")
 
 # The pattern is always the same. Load the token from an environment variable. Build the URL. 
-# Pass the token as a query parameter or header. Parse the JSON response. 
+# Pass the token as a query parameter or header. Parse the JSON response.
+ 
 # The Facebook Graph API, the X API, the OpenAI API: they all follow this exact sequence.
 #  Handle 401 and 403 errors explicitly so your scripts fail clearly instead of silently.
 #  Day 24 puts all of this together into a structured, production-style API script

@@ -57,3 +57,7 @@ def print_farm_report(cooperative, summary):
 readings = fetch_farm_readings()
 summary = process_readings(readings, MIN_LITRES)
 print_farm_report(COOPERATIVE, summary)
+
+# Try this:
+# Add a new farm to the readings list with a high litre count. Watch it take the top position.
+#  Then lower MIN_LITRES to 10.0 and see how many farms are flagged.

@@ -2,6 +2,7 @@
 # It does not process, print, or save. It only fetches. Keep it focused.
 
 # FETCH FUNCTION PATTERN
+
 # Simulates what a fetch function does in a script
 def fetch_members(city="Nairobi", limit=50):
     """

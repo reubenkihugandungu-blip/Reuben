@@ -18,7 +18,7 @@ consumer_key = os.getenv("MPESA_CONSUMER_SECRET")
 credentials = f"{consumer_key}:{consumer_key}"
 encoded = base64.b64encode(credentials.encode()).decode()
 
-#Step 3: In production you POST this to Daraja to get a token:
+# Step 3: In production you POST this to Daraja to get a token:
 # url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?" grant_type=client_credentials"
 # headers = {"Authorization": f"Basic {encoded}"}
 # response = requests.get(url, headers=headers)

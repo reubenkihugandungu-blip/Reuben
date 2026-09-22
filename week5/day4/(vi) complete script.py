@@ -1,4 +1,7 @@
 # Put all four parts together. Each function has one job. The main block calls them in sequence.
+
+# FULL FOUR-PART SCRIPT
+
 import json, os
 
 # --- Configuration ---
@@ -55,4 +58,6 @@ members = fetch_members(TARGET_CITY)# calls fetch_members("Mombasa") and stores 
 summary = process_members(members, STEP_GOAL)# processes those members and stores the summary in summary
 print_report(TARGET_CITY, summary)# prints the report using the target city and summary.avg_steps = round(sum(m["steps"] for m in members) / len(members), 1) if members else 0
 
-
+# Try this:
+# Change TARGET_CITY to "Mombasa" and run again. Then add a member from Mombasa to the mock data
+#  and see them appear in the report.
