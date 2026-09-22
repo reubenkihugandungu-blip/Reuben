@@ -3,8 +3,11 @@
 
 # JSON is a text-based data format. It uses curly braces for objects (like Python dicts),
 #  square brackets for arrays (like Python lists), and strings must use double quotes.
+
 # Python's built-in json module converts between JSON text and Python data structures.
-# Think of it as a universal shipping label between two different programs.
+# Think of it as a universal shipping label between two different programs. it needs a standard format
+#  both can understand. JSON is that format. Python reads it in, works with it as a dictionary or list,
+#  then can send it back as JSON text for the next program to read.
 
 # JSON	             Python equivalent
 # {"key": "value"}	dictionary

@@ -34,4 +34,7 @@ for job in data["jobs"]:
 print(f"\nTotal quoted: KES {total:,}")
 print(f"Collected: KES {paid:,}")
 print(f"Ouststanding: KES {total - paid:,}")
-    
+
+# Try this:
+# Add a fourth job to the jobs list inside the JSON string. Give it a new client name, item, and quote.
+#  Run it again and watch the totals update automatically.

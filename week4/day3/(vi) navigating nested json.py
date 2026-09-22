@@ -28,4 +28,7 @@ print()
 for log in data["daily_logs"]: # data["daily_logs"] accesses the "daily_logs" array from the parsed JSON data, log represents one dict eg "day": "Monday"
     status = "OK" if log["steps"] >= 8000 else "low"
     print(f" {log['day']} {log['steps']} steps ({status})")
-    
+
+# Try this:
+# Add a sixth day to daily_logs inside the JSON string and run it again.
+#  Notice that the loop picks it up automatically.

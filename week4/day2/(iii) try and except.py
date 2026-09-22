@@ -1,6 +1,8 @@
 # Wrap code that might fail in a try block. Put your response in the except block. 
 # If the try block fails, Python jumps to except instead of crashing.
 
+# The program processes every item. When it hits the invalid entry, it prints a message and continues.
+
 steps_data = ["9200", "7500", "ten thousand", "8800", "6900"]
 
 for item in steps_data: # starts a loop that goes through each value in the list steps_data. each element is assigned to the variable item on each iteration.
@@ -14,4 +16,3 @@ for item in steps_data: # starts a loop that goes through each value in the list
         print(f"'{item}' is not a valid number. Skipping.")# prints a message saying the current item is invalid and wil be skipped.
 
 
-# 

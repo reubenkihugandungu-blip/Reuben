@@ -1,6 +1,9 @@
 # Create a Python dictionary called week_report that contains your name, a list of 5 daily step counts,
 #  and the fasting protocols used each day. Convert it to a JSON string and print it. 
 # Then load it back and compute the average steps from the list inside the JSON.
+
+# MY CODE
+
 import json
 
 week_report = {
