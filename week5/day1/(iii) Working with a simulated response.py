@@ -2,6 +2,7 @@
 #  The only difference is where the data comes from.
 
 # Simulated API response
+
 # Simulates what response.json() returns from a fitness API
 data = {
     "user_id": 1,

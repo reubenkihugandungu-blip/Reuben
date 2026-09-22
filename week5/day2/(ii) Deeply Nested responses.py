@@ -3,6 +3,7 @@
 # You navigate it layer by layer using chained bracket access and .get() for safety.
 
 # Navigate nested structure
+
 response = {
     "status": "success",
     "user": {

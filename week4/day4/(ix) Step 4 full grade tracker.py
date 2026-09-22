@@ -1,6 +1,8 @@
 # Reads CSV, parses scores with error handling, calculates averages and grades, prints a report,
 #  and exports JSON results.
 
+# RUN FULL PROJECT
+
 import csv, io, json
 
 csv_data = """name,score1,score2,score3

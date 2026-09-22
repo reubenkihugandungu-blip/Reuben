@@ -2,7 +2,8 @@
 #  If you access a key that does not exist, Python raises a KeyError. 
 # Use .get() with a default to handle it safely.
 
-# Safe key access with.get()
+## Safe key access with.get()
+
 records = [
     {"name": "Patrick Njiru", "steps": 9100, "water_glasses": 7},
     {"name": "Grace Achieng", "steps": 8400},  # no water logged
@@ -15,4 +16,3 @@ for r in records:
     
 # The second argument to .get() is the default. If the key exists you get its value.
 #  If it does not, you get the default instead of a crash.
-# 

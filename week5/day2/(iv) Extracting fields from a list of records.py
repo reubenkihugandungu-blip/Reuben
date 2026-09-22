@@ -3,6 +3,7 @@
 
 # Extract specific fields
 # Raw API response: list of full user records
+
 raw = [
     {"id": 1, "name": "James Omondi", "email": "james@smp.ke", "steps": 9200, "protocol": "OMAD", "sleep": 7.5, "active": True},
     {"id": 2, "name": "Sandra Weru", "email": "sw@smp.ke", "steps": 10500, "protocol": "2MAD", "sleep": 8.0, "active": True},

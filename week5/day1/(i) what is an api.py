@@ -1,3 +1,8 @@
+# Every app you use pulls live data from somewhere. Weather apps fetch forecasts. 
+# Fitness trackers sync stats. Payment platforms check balances. 
+# The mechanism behind all of it is an API.
+# This week you go from working with local files to pulling data from the internet.
+
 # An API (Application Programming Interface) 
 # is a set of rules that lets one program request data or actions from another program over a network. 
 # Your code sends a request to an API endpoint (a URL), and the API sends back a response, usually as JSON.
@@ -6,19 +11,23 @@
 # You walk in and hand over your phone. 
 # You tell the person at the counter what you need: screen replacement, battery swap. 
 # They go into the workshop, get it done, and bring back the result.
-#  You never go into the workshop yourself. The counter is the API. 
+# You never go into the workshop yourself. The counter is the API. 
 # It is a defined interface between you and the system doing the work.
-#  You send a request. You get back a response.
+# You send a request. You get back a response.
 
 # An API has three core parts. The endpoint is the URL you send your request to.
-#  The request is the message you send, including what you want and any parameters. 
+# The request is the message you send, including what you want and any parameters. 
 # The response is what comes back, usually JSON data along with a status code.
 
-# APIs communicate over HTTP, the same protocol browsers use. The method tells the API what action to take.
+## HTTP Methods
+
+# APIs communicate over HTTP, the same protocol browsers use.
+#  The method tells the API what action to take.
+
 # The first package you will install for this course is requests.
-#  It is the standard library for making HTTP calls in Python. 
-#  Calling an API means sending an HTTP request and reading the response.
-#  requests handles all of that with a clean, readable syntax.
+# It is the standard library for making HTTP calls in Python. 
+# Calling an API means sending an HTTP request and reading the response.
+# requests handles all of that with a clean, readable syntax.
 
 # Method	What It Does	                      Example
 # GET	    Retrieve data	                     Fetch today's step count
@@ -26,8 +35,9 @@
 # PUT	    Update an existing record	          Update  today's sleep hours
 # DELETE	Remove a record	Delete a duplicate   log entry
 
-# Status codes
-# Every API response includes a status code. The code tells you what happened before you even look at the data.
+## Status codes
+# Every API response includes a status code. 
+# The code tells you what happened before you even look at the data.
 
 # Code	Meaning
 # 200	OK. Request succeeded. Data is in the response.
@@ -40,9 +50,3 @@
 # Always check the status code first. A 200 means your data is there.
 #  Anything else and you need to investigate before trying to use the response body.
 
-# What the requests Library Does
-# requests is a third-party Python library that handles HTTP communication. 
-# It is not built into Python, so you install it once with pip install requests. 
-# After that, one line of code sends a request to any API endpoint in the world and 
-# returns a response object containing the status code, headers, and the data body. 
-# It is the most widely used HTTP library in Python and the standard starting point for anyone working with APIs.

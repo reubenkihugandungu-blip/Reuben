@@ -2,6 +2,8 @@
 # A crop farmer tracks harvest yield per field using a CSV.
 #  The same DictReader pattern reads each field's output and flags underperforming plots.
 
+# CROP HARVEST: CSV READER
+
 import csv, io # imports both modules
 
 harvest_csv = """field,crop,bags_harvested,target_bags

@@ -1,5 +1,6 @@
 # APIs sometimes return null in JSON, which becomes None in Python. 
 # If you try to access a key on None, you get a TypeError. Check for None before going deeper.
+
 # Handle None values
 
 users = [

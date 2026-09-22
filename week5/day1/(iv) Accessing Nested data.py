@@ -1,6 +1,8 @@
 # Many API responses have nested structure where a key's value is itself a dictionary. 
 # Chain brackets to go deeper.
+
 # Nested API Data
+
 data = {
     "user": {
         "id": 1,

@@ -1,7 +1,10 @@
 # When an API returns a list of records, response.json() gives you a Python list of dictionaries. 
 # Loop through it like any list.
+
 # List of API Records
+
 # Simulates: response.json() from /api/weekly-logs
+
 weekly_logs = [
     {"day": "Monday", "steps": 9200, "protocol": "OMAD"},
     {"day": "Tuesday", "steps": 10500, "protocol": "2MAD"},

@@ -1,11 +1,16 @@
-#👉  When a developer calls the X API to fetch a post, the response is a nested JSON object. 
+# What this looks like with a Real API: X (Twitter)
+
+# Everything you have practiced in this lesson is exactly what happens when you connect to the X API.
+# When a developer calls the X API to fetch a post, the response is a nested JSON object. 
 # The post text is buried inside a data key. The engagement numbers are inside public_metrics inside data.
-#  The author details are in a separate includes section. 
+# The author details are in a separate includes section. 
 # No different from what you have been parsing all lesson.
+
 # Below is a post from x.com/amerix, structured exactly as the X API v2 would return it. 
 # No keys, no connection, just the structure.
 
-# Parse a real x API response
+## Parse a real x API response
+
 # This is what the X API v2 returns when you fetch a post
 # structure: data (the post) + includes (the author details)
 x_response = {
@@ -61,4 +66,5 @@ print(f"Engagement rate: {(metrics['like_count'] + metrics['retweet_count'] + me
 # Formula: (likes + retweets + replies) / followers * 100. Add one line that prints it rounded to two decimal places
 
 # Whether you are parsing an SMP member record, a weather API, or an X post, the pattern does not change:
-#  navigate layer by layer, use .get() for optional fields, pull only what you need. The API changes. The technique does not.
+# navigate layer by layer, use .get() for optional fields, pull only what you need.
+#  The API changes. The technique does not.

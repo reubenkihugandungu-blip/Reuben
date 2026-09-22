@@ -1,6 +1,7 @@
 # You rarely want everything an API returns. Filter using the list comprehension pattern from Week 3.
 
 # Filter API results
+
 logs = [
     {"name": "James Omondi", "steps": 9200, "protocol": "OMAD"},
     {"name": "Sandra Weru", "steps": 10500, "protocol": "2MAD"},

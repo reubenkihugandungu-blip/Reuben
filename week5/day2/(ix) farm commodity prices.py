@@ -2,7 +2,8 @@
 #  A farmer or trader who builds a price alert script will parse it using everything you just learned. 
 # The technique does not change.
 
-# Parse a commodity price API response
+## Parse a commodity price API response
+
 # Simulated response from a commodity prices API
 commodity_response = {
     "status": "ok",
@@ -50,5 +51,7 @@ print(f"Highest percentage increase: {highest_increase['commodity']} ({highest_i
 #☝️ max() finds the largest value
 # available_list is the list being searched, key= tells python what value to compare
 # lambda item: item["change_pct"] means: compare items using their "change_pct" value
+
 # Try this:
-# Add a filter so only available commodities print. Then add a line at the bottom that prints the commodity with the highest percentage increase.
+# Add a filter so only available commodities print. Then add a line at the bottom that prints 
+# the commodity with the highest percentage increase.

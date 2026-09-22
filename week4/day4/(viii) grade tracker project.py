@@ -3,14 +3,21 @@
 #  handles bad data using error handling, computes averages and letter grades, then outputs a clean report. 
 # Every skill from this week appears in this project.
 
+# STEP 1: The Data
+
+# The grade tracker reads from a CSV with columns for student name,
+# and three assignment scores. Some scores may be missing or invalid.
+# Understand the structure. Each student has three scores. Some may be empty or have bad data.
+
 # name,score1,score2,score3
-#James Omondi,85,90,78
-#Sandra Weru,72,,88
-#Patrick Njiru,91,87,94
-#Grace Achieng,60,bad data,70
-#Brian Kamau,55,48,62
+# James Omondi,85,90,78
+# Sandra Weru,72,,88
+# Patrick Njiru,91,87,94
+# Grace Achieng,60,bad data,70
+# Brian Kamau,55,48,62
 
 # Preview the data
+
 import csv, io
 
 csv_data = """name,score1,score2,score3
@@ -26,7 +33,8 @@ reader = csv.DictReader(f)
 for row in reader:
   print(dict(row))
 
-# Parse Scores safely- write a function that tries to convert a score to an integer. if it fails return None
+# Parse Scores safely
+#  write a function that tries to convert a score to an integer. if it fails return None
 
 def parse_score(value):
   try:
@@ -61,7 +69,9 @@ def letter_grade(avg):
     return "D"
   else:
     return "F"
+  
 # Test
+
 scores_a = [85, 90, 78]
 scores_b = [72, None, 88]
 scores_c = [60, None, None]
@@ -69,4 +79,3 @@ scores_c = [60, None, None]
 for s in [scores_a, scores_b, scores_c]:
   avg = calculate_average(s)
   print(f"Scores: {s} | Avg: {avg} | Grade: {letter_grade(avg)}")
-# 

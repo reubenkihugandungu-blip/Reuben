@@ -1,6 +1,6 @@
 # csv.DictReader automatically uses the first row as keys and gives you each row as a dictionary. 
 # This is the most practical way to read CSV data because you access values by column name, not by position.
-# 
+
 import csv
 import io
 
@@ -21,5 +21,6 @@ for row in reader:
 
 # Line 13 prepares the data as a readable file,
 #  and line 14 converts it to a dictionary-based format for easy access by column name.
+
 # Tip: All values from a CSV come in as strings.
 #  Convert them to the right type before using them in calculations. Use int() for whole numbers and float() for decimals.

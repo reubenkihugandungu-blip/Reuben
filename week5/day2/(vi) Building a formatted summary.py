@@ -1,5 +1,5 @@
 # Parsing ends when you can produce clean, readable output from raw API data.
-#  This means extracting, computing, and formatting in one pass.
+# This means extracting, computing, and formatting in one pass.
 
 # parse and summarize
 api_response = {

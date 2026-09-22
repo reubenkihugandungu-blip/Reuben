@@ -1,6 +1,11 @@
 # csv.reader reads a CSV file and gives you each row as a list. 
 # The first row (the header) is just another list.
 
+# Each row is a Python list.
+# The first row is the header. To skip it, call next(reader) before the loop.
+
+## SKIP THE HEADER
+
 import csv
 import io
 

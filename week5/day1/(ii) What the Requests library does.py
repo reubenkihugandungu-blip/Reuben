@@ -1,3 +1,11 @@
+## What the requests Library Does
+
+# requests is a third-party Python library that handles HTTP communication. 
+# It is not built into Python, so you install it once with pip install requests. 
+# After that, one line of code sends a request to any API endpoint in the world and 
+# returns a response object containing the status code, headers, and the data body. 
+# It is the most widely used HTTP library in Python and the standard starting point for anyone working with APIs.
+
 # In Vs code (requires: pip install requests)
 # then: call requests.get(url).
 #The response object has a .status_code attribute and a .json() method that converts the JSON body
