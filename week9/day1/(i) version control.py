@@ -34,19 +34,19 @@
 # Terminal: Set your identity
 
 # Replace with your name and email
-# git config --global user.name "Brian Otieno"
-# git config --global user.email "brian@example.com"
+git config --global user.name "Brian Otieno"
+git config --global user.email "brian@example.com"
 
 # Set VS Code as the default editor
-# git config --global core.editor "code --wait"
+git config --global core.editor "code --wait"
 
 # Verify your settings
 
-# git config --global --list
+ git config --global --list
 # user.name=Brian Otieno
 # user.email=brian@example.com
 # core.editor=code --wait
 
 # Tip: 
 # Use the same email address for Git configuration and for your GitHub account.
-#  This links your commits to your GitHub profile and builds your contribution graph over time.
+# This links your commits to your GitHub profile and builds your contribution graph over time.

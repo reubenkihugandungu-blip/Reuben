@@ -55,7 +55,7 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         .gitignore
 
-nothing added to commit but untracked files present
+# nothing added to commit but untracked files present
 
 # .env is not listed because .gitignore hides it
 # Tip:

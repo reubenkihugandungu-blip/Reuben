@@ -9,6 +9,8 @@
 #  Boolean filtering works the same way: the original data stays untouched, 
 # and you get back only the rows that pass the condition.
 
+# FILTER ROWS
+
 import pandas as pd
 
 df = pd.DataFrame({ # Creates a data frame named df
@@ -38,3 +40,4 @@ print(low_sleep[["day", "sleep_hr"]].to_string())
 # check a condition for each row
 # keep only rows where the condition is True
 # ignore the rest
+

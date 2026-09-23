@@ -1,4 +1,7 @@
 # Combine conditions with & (AND) and | (OR). Each condition must be wrapped in parentheses.
+
+# MULTIPLE CONDITIONS
+
 import pandas as pd
 
 df = pd.DataFrame({

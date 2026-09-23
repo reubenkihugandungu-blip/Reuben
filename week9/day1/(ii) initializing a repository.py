@@ -6,16 +6,16 @@
 
 # Terminal: Create and initialize a project
 # Create a new project folder
-# mkdir smp-tracker
-# cd smp-tracker
+mkdir smp-tracker
+cd smp-tracker
 
 # Initialize Git
-# git init
+ git init
 # Initialized empty Git repository in /home/brian/smp-tracker/.git/
 
 # Check the status (nothing tracked yet)
 
-# git status
+git status
 # On branch main
 
 # No commits yet
