@@ -1,6 +1,6 @@
 # Writing Good Commit Messages
 # A commit message is the only communication between you-now and you-in-six-months.
-#  Write it for someone who knows the project but has no idea what you just changed or why.
+# Write it for someone who knows the project but has no idea what you just changed or why.
 
 # Format rule                     	   Good example	                                   Bad example
 # Start with a verb (imperative)	   Add member check-in endpoint	              Added some stuff to the API
