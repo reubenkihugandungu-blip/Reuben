@@ -1,5 +1,5 @@
 # stops the loop entirely the moment Python hits it.
-#  The rest of the loop body is skipped and execution continues after the loop.
+# The rest of the loop body is skipped and execution continues after the loop.
 
 # BREAK: STOP WHEN TARGET IS HIT
 
