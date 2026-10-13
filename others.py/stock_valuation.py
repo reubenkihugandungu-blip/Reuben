@@ -298,9 +298,9 @@ STOCKS = [
     StockInput(
         name="Quick Mart (EDIT ME)",
         sector="retail",
-        price=20.0,
-        shares_outstanding=500,
-        net_profit=1200,
+        price=7.5,
+        shares_outstanding=400000000000,
+        net_profit=1500000000,
         shareholders_equity=6000,
         total_assets=15000,
         total_debt=2000,
